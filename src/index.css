@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold leading-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-gray-900 text-white hover:bg-gray-800 focus:ring-gray-900;
+  }
+  
+  .btn-studios {
+    @apply bg-dt-studios-600 text-white hover:bg-dt-studios-700 focus:ring-dt-studios-600;
+  }
+  
+  .btn-infinite {
+    @apply bg-dt-infinite-600 text-white hover:bg-dt-infinite-700 focus:ring-dt-infinite-600;
+  }
+  
+  .btn-safaris {
+    @apply bg-dt-safaris-600 text-white hover:bg-dt-safaris-700 focus:ring-dt-safaris-600;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white focus:ring-gray-900;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl overflow-hidden;
+  }
+  
+  .service-card {
+    @apply flex flex-col h-full bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden;
+  }
+}
+
+/* Animation delay utilities */
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
